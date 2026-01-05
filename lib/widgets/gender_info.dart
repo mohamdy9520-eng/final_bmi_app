@@ -25,7 +25,9 @@ class GenderInfo extends StatelessWidget{
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              FloatingActionButton.small(onPressed:decreaseOnTap,
+              FloatingActionButton.small(
+              heroTag: "$title 1"
+                ,onPressed:decreaseOnTap,
                 backgroundColor: Color(0xff8B8C9E),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadiusGeometry.circular(100),
@@ -34,7 +36,9 @@ class GenderInfo extends StatelessWidget{
               ),
 
 
-              FloatingActionButton.small(onPressed:increaseOnTap,
+              FloatingActionButton.small(
+                heroTag: "$title 2"
+              ,onPressed:increaseOnTap,
                 backgroundColor: Color(0xff8B8C9E),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadiusGeometry.circular(100),
